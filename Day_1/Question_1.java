@@ -1,5 +1,3 @@
-package Day_1;
-
 import java.util.Scanner;
 public class Question_1 {
      public static void main(String[] args){
@@ -10,7 +8,8 @@ public class Question_1 {
         for (int i = 1; i <= n; i++){
             c = c+i;
         }
-        System.out.println("The sum of first "+n+" is "+c);
+        System.out.println("The sum of first "+n+" number is "+c);
+        sc.close();
 
     }
 }
