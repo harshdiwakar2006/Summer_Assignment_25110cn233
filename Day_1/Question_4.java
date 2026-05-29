@@ -14,12 +14,12 @@ public class Question_4 {
 
         while (n != 0) {
 
-            d = d + (n % 10);
+            d++;
 
             n = n / 10;
         }
 
-        System.out.println("The sum of digits is = " + d);
+        System.out.println("The number of digits are = " + d);
 
         sc.close();
     }
