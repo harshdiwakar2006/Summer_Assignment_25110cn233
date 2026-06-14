@@ -1,9 +1,7 @@
 import java.util.Scanner;
 
-
-public class Question_1 {
-    
-    public static void main(String[] args) {
+public class Question_2 {
+     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
         System.out.print("Enter the number of elements: ");
@@ -16,25 +14,19 @@ public class Question_1 {
             arr[i] = sc.nextInt();
         }
 
-        System.out.print("Enter the element to search: ");
+        System.out.print("Enter the element to find frequency: ");
         int key = sc.nextInt();
 
-        int position = -1;
+        int count = 0;
 
         for (int i = 0; i < n; i++) {
             if (arr[i] == key) {
-                position = i + 1; // Position starts from 1
-                break;
+                count++;
             }
         }
 
-        if (position != -1) {
-            System.out.println("Element found at position " + position);
-        } else {
-            System.out.println("Element not found");
-        }
+        System.out.println("Frequency of " + key + " = " + count);
 
         sc.close();
     }
 }
-
